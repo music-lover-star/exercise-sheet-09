@@ -1,4 +1,4 @@
-package de.unistuttgart.iste.rss.oo.sheet09.teacher;
+package de.unistuttgart.iste.rss.oo.sheet09.presence.teacher;
 
 
 import java.io.Console;
