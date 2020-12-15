@@ -1,4 +1,4 @@
-package de.unistuttgart.iste.rss.oo.sheet09.teacher;
+package de.unistuttgart.iste.rss.oo.sheet09.presence.teacher;
 
 /**
  * Hamster game which contains a bug. It's being used to demonstrate the debugging tools provided by eclipse.
