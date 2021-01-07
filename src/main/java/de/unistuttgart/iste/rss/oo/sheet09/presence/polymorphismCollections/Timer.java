@@ -21,6 +21,11 @@ public class Timer {
     /**
      * When the timer is ready, start measuring the time. 
      */
+    /*@
+     @ requires timerState == State.READY 
+     @ ensures timerState == State.RUNNING
+     @ ensures nanosecondsAtStart != null
+     @*/
     public void start() {
         if (timerState != State.READY) {
             throw new IllegalStateException("Timer not ready");
@@ -32,6 +37,12 @@ public class Timer {
     /**
      * When the timer is running, stop the measurement. 
      */
+    /*@
+     @ requires timerState == State.RUNNING 
+     @ ensures timerState == State.STOPPED
+     @ ensures nanosecondsAtStart != null && nanosecondsAtStop != null
+     @ ensures nanosecondsAtStart < nanosecondsAtStop
+     @*/
     public void stop() {
         if (timerState != State.RUNNING) {
             throw new IllegalStateException("Timer not running");
@@ -44,6 +55,11 @@ public class Timer {
     /**
      * Reset a stopped timer. 
      */
+    /*@
+     @ requires timerState == State.STOPPED 
+     @ ensures timerState == State.READY
+     @ ensures nanosecondsAtStart == 0 && nanosecondsAtStop == 0
+     @*/
     public void reset() {
         if (timerState != State.STOPPED) {
             throw new IllegalStateException("Timer not stopped");
@@ -57,6 +73,9 @@ public class Timer {
     /**
      * @return Returns the measurement taken in case the timer has been stopped.
      */
+    /*@
+     @ requires timerState == State.STOPPED
+     @*/
     public long getResultInNanoseconds() {
         if (timerState != State.STOPPED) {
             throw new IllegalStateException("Timer not stopped");
