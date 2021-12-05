@@ -1,5 +1,9 @@
 package de.unistuttgart.iste.rss.oo.sheet09.presence.overrideOverload;
 
+/**
+ * A class to test overloading
+ *
+ */
 public class OverloadedUsageTest {
 
 	public static void main(final String[] args) {

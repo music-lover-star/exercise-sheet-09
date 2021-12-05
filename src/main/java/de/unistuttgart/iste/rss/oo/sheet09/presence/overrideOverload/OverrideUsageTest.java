@@ -1,6 +1,11 @@
 package de.unistuttgart.iste.rss.oo.sheet09.presence.overrideOverload;
 
+/**
+ * A class to test overriding
+ *
+ */
 public class OverrideUsageTest {
+
 
 	public static void main(final String[] args) {
 		// Create an entity libraryOfAlexandria and stuttgartOperaHouse of type Library
