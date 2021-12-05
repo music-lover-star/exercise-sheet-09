@@ -1,4 +1,4 @@
-package de.unistuttgart.iste.rss.oo.sheet09.presence.polymorphismCollections;
+package de.unistuttgart.iste.sqa.pse.sheet09.presence.polymorphismCollections;
 
 import java.util.*;
 
