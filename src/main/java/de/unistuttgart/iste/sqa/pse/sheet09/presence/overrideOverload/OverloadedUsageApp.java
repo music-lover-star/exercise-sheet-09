@@ -4,7 +4,7 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload;
  * A class to test overloading
  *
  */
-public class OverloadedUsageTest {
+public class OverloadedUsageApp {
 
 	public static void main(final String[] args) {
 		// Create an entity libraryOfAlexandria and stuttgartOperaHouse of type Library

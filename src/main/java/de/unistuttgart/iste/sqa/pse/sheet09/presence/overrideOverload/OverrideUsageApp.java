@@ -4,7 +4,7 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload;
  * A class to test overriding
  *
  */
-public class OverrideUsageTest {
+public class OverrideUsageApp {
 
 
 	public static void main(final String[] args) {
