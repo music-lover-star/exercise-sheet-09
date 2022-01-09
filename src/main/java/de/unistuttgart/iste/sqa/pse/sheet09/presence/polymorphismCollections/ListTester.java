@@ -3,7 +3,7 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.polymorphismCollections;
 import java.util.*;
 
 /**
- * A class to test list implementations
+ * A class to test list implementations.
  */
 class ListTester {
 

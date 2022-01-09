@@ -10,7 +10,7 @@ public abstract class Building {
     
     /**
      * Constructor for the class
-     * @param name
+     * @param name the name of the building
      */
     public Building(final String name) {
         this.name = name;
@@ -25,12 +25,12 @@ public abstract class Building {
     }
     
     /**
-     * @return Returns type of the building
+     * @return the type of the building
      */
     protected abstract String getBuildingType();
 
     /**
-     * @return Returns the name of the building
+     * @return the name of the building
      */
     public String getBuildingName() {
         return name;

@@ -1,8 +1,7 @@
 package de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload;
 
 /**
- * A class to test overloading
- *
+ * A class to test overloading.
  */
 public class OverloadedUsageApp {
 

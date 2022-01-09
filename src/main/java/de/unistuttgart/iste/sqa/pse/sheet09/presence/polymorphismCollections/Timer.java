@@ -9,7 +9,8 @@ enum State {
 }
 
 /**
- * A class implementing a timer or a stop watch
+ * A class implementing a timer or a stop watch.
+ *
  * @author Steffen Becker
   */
 public class Timer {
@@ -71,7 +72,7 @@ public class Timer {
     }
     
     /**
-     * @return Returns the measurement taken in case the timer has been stopped.
+     * @return the measurement taken in case the timer has been stopped.
      */
     /*@
      @ requires timerState == State.STOPPED
