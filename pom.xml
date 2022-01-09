@@ -4,33 +4,33 @@
 	<groupId>de.unistuttgart.iste.sqa.pse</groupId>
 	<artifactId>exercise-sheet-09</artifactId>
 	<name>PSE exercise sheet 09</name>
-    <version>1.0.0</version>
+	<version>1.0.0</version>
 
 	<properties>
-		<hamster.version>4.0.0</hamster.version>
-    </properties>
+		<hamster.version>4.3.4</hamster.version>
+	</properties>
 
-	
+
 
 	<dependencies>
 		<dependency>
-            <groupId>de.hamstersimulator.objectsfirst</groupId>
-            <artifactId>main</artifactId>
-            <version>${hamster.version}</version>
-        </dependency>
+			<groupId>de.hamstersimulator.objectsfirst</groupId>
+			<artifactId>main</artifactId>
+			<version>${hamster.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
 				<configuration>
 					<release>16</release>
 					<source>16</source>
 					<target>16</target>
 				</configuration>
-            </plugin>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -39,11 +39,11 @@
 					<execution>
 						<id>OverrideUsageTest</id>
 						<configuration>
-							<mainClass>de.unistuttgart.iste.rss.oo.sheet09.presence.overrideOverload.OverrideUsageTest</mainClass>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverrideUsageTest</mainClass>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-        </plugins>
-    </build>
+		</plugins>
+	</build>
 </project>
