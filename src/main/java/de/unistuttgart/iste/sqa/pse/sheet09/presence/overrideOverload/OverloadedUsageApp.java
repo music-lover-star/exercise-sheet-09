@@ -16,7 +16,7 @@ public class OverloadedUsageApp {
 		// Create entities building1 and building2 of type Building
 		// let them reference libraryOfAlexandria and stuttgartOperaHouse
 		
-        // Call this class' static print building info and pass each of the building
+        	// Call this class' static print building info and pass each of the building
 		// entities
 	}
 
