@@ -11,11 +11,11 @@ public class OverrideUsageApp {
 		// and Opera
 		// Let reference a new library and opera respectively
 		
-        // Call print building info on both of these entities
+        	// Call print building info on both of these entities
 		
 		// Create entities building1 and building2 of type Building
 		// let them reference libraryOfAlexandria and stuttgartOperaHouse
 		
-        // Call print building info on both of these entities
+        	// Call print building info on both of these entities
 	}
 }
