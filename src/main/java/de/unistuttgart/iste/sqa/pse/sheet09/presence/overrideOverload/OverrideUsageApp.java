@@ -7,9 +7,8 @@ public class OverrideUsageApp {
 
 
 	public static void main(final String[] args) {
-		// Create an entity libraryOfAlexandria and stuttgartOperaHouse of type Library
-		// and Opera
-		// Let reference a new library and opera respectively
+		// Create an object stuttgartOperaHouse of type Opera
+		// Create an object libraryOfAlexandria of type Library
 		
         	// Call print building info on both of these entities
 		
