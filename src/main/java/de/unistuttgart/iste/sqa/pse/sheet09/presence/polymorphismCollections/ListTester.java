@@ -8,6 +8,6 @@ import java.util.*;
 class ListTester {
 
 	public static void main(String[] args) {
-		//Implement the tests from exercise 2 here.
+		// Implement the tests from exercise 2 here.
 	}
 }
