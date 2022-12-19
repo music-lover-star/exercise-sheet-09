@@ -5,7 +5,7 @@
 	<groupId>de.unistuttgart.iste.sqa.pse</groupId>
 	<artifactId>exercise-sheet-09</artifactId>
 	<version>1.0.0</version>
-	<name>PSE exercise sheet 09</name>
+	<name>Exercise Sheet 09</name>
 
 	<properties>
 		<hamster.version>5.0.0</hamster.version>
@@ -38,8 +38,8 @@
 					<execution>
 						<id>OverrideUsageTest</id>
 						<configuration>
-							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverrideUsageTest</mainClass>
-						</configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverrideUsageApp</mainClass>
+						</configuration>App
 					</execution>
 				</executions>
 			</plugin>
