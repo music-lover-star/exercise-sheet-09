@@ -6,17 +6,16 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload;
 public class OverloadedUsageApp {
 
 	public static void main(final String[] args) {
-		// Create an entity libraryOfAlexandria and stuttgartOperaHouse of type Library
-		// and Opera
-		// Let them reference a new library and opera respectively
+		// Create an object libraryOfAlexandria of type Library
+		// Create an object stuttgartOperaHouse of type Opera
 
 		// Call this class' static print building info and pass libraryOfAlexandria and
 		// stuttgartOperaHouse
 
 		// Create entities building1 and building2 of type Building
 		// let them reference libraryOfAlexandria and stuttgartOperaHouse
-		
-        // Call this class' static print building info and pass each of the building
+
+		// Call this class' static print building info and pass each of the building
 		// entities
 	}
 

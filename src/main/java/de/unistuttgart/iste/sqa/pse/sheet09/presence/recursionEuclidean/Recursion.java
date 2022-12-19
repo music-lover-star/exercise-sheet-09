@@ -1,6 +1,5 @@
 package de.unistuttgart.iste.sqa.pse.sheet09.presence.recursionEuclidean;
 
-
 public class Recursion {
 
 	public static int greatestCommonDivisorLoop(int a, int b) {
@@ -14,5 +13,4 @@ public class Recursion {
 		// TODO: replace a within the return statement!
 		return a;
 	}
-
 }
