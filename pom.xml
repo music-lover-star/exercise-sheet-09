@@ -36,10 +36,22 @@
 				<version>3.1.0</version>
 				<executions>
 					<execution>
-						<id>OverrideUsageTest</id>
+						<id>OverrideUsageApp</id>
 						<configuration>
 							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverrideUsageApp</mainClass>
-						</configuration>App
+						</configuration>
+					</execution>
+					<execution>
+						<id>OverloadedUsageApp</id>
+						<configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverloadedUsageApp</mainClass>
+						</configuration>
+					</execution>
+					<execution>
+						<id>RecursionApp</id>
+						<configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.recursionEuclidean.RecursionApp</mainClass>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
