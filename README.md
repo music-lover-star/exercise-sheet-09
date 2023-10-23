@@ -21,6 +21,3 @@ You don't need this repo for the homework part.
   ```sh 
     mvn clean compile exec:java@OverrideUsageApp
   ```
-  ```sh 
-    mvn clean compile exec:java@RecursionApp
-  ```

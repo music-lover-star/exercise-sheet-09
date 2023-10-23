@@ -47,12 +47,6 @@
 							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverloadedUsageApp</mainClass>
 						</configuration>
 					</execution>
-					<execution>
-						<id>RecursionApp</id>
-						<configuration>
-							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.recursionEuclidean.RecursionApp</mainClass>
-						</configuration>
-					</execution>
 				</executions>
 			</plugin>
 			<plugin>
