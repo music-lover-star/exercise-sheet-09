@@ -19,7 +19,7 @@ public class LazyHamster extends Hamster {
     public void move(){
     	final double probabilityToMove = 0.7;
     	if (Math.random() < probabilityToMove) {
-    		this.move();
+    		super.move();
     	} else {
     		this.write("Too lazy");
     	}
