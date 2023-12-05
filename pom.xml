@@ -36,6 +36,12 @@
 				<version>3.1.0</version>
 				<executions>
 					<execution>
+						<id>JustSomeHamsterGameApp</id>
+						<configuration>
+							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.homework.JustSomeHamsterGameApp</mainClass>
+						</configuration>
+					</execution>
+					<execution>
 						<id>OverrideUsageApp</id>
 						<configuration>
 							<mainClass>de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload.OverrideUsageApp</mainClass>
