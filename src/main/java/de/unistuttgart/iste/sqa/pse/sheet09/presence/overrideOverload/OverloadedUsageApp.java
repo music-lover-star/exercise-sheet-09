@@ -27,17 +27,17 @@ public class OverloadedUsageApp {
 	}
 
 	private static void printBuildingInfo(final Building building) {
-		System.out.format("My type is Building\n");
-		System.out.format("My name is %s\n", building.getBuildingName());
+		System.out.format("Printing Information for a BUILDING:\n");
+		building.printBuildingInfo();
 	}
 
 	private static void printBuildingInfo(final Library aLibrary) {
-		System.out.format("My type is Library\n");
-		System.out.format("My name is %s\n", aLibrary.getBuildingName());
+		System.out.format("Printing Information for a LIBRARY:\n");	
+		aLibrary.printBuildingInfo();
 	}
 
 	private static void printBuildingInfo(final Opera aOpera) {
-		System.out.format("My type is Opera\n");
-		System.out.format("My name is %s\n", aOpera.getBuildingName());
+		System.out.format("Printing Information for an OPERA:\n");	
+		aOpera.printBuildingInfo();
 	}
 }
