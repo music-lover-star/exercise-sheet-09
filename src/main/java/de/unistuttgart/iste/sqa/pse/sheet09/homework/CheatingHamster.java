@@ -17,8 +17,8 @@ public class CheatingHamster extends Hamster {
 
 	@Override
 	public void move() {
-		this.move();
-		this.move();
+		super.move();
+		super.move();
 	}
 
 }
