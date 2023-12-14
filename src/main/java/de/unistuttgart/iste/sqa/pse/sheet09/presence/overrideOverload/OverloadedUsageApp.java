@@ -32,12 +32,12 @@ public class OverloadedUsageApp {
 	}
 
 	private static void printBuildingInfo(final Library aLibrary) {
-		System.out.format("Printing Information for a LIBRARY:\n");	
+		System.out.format("Printing Information for a LIBRARY:\n");
 		aLibrary.printBuildingInfo();
 	}
 
 	private static void printBuildingInfo(final Opera aOpera) {
-		System.out.format("Printing Information for an OPERA:\n");	
+		System.out.format("Printing Information for an OPERA:\n");
 		aOpera.printBuildingInfo();
 	}
 }

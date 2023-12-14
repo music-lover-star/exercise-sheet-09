@@ -22,5 +22,8 @@ You don't need this repo for the homework part.
     mvn clean compile exec:java@OverrideUsageApp
   ```
   ```sh 
+    mvn clean compile exec:java@ListTester
+  ```
+  ```sh 
     mvn clean compile exec:java@JustSomeHamsterGameApp
   ```

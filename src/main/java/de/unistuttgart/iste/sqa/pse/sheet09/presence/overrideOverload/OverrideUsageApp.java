@@ -16,7 +16,7 @@ public class OverrideUsageApp {
 		stuttgartOperaHouse.printBuildingInfo();
 
 		// Create entities building1 and building2 of type Building
-		// let them reference libraryOfAlexandria and stuttgartOperaHouse		
+		// let them reference libraryOfAlexandria and stuttgartOperaHouse
 		Building building1 = libraryOfAlexandria;
 		Building building2 = stuttgartOperaHouse;
 

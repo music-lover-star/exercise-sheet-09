@@ -10,8 +10,8 @@ import de.hamstersimulator.objectsfirst.external.model.Territory;
  */
 public class CheatingHamster extends Hamster {
 
-	public CheatingHamster(final Territory territory, final Location location, final Direction direction,
-			final int newGrainCount) {
+	public CheatingHamster(
+			final Territory territory, final Location location, final Direction direction, final int newGrainCount) {
 		super(territory, location, direction, newGrainCount);
 	}
 
@@ -20,5 +20,4 @@ public class CheatingHamster extends Hamster {
 		super.move();
 		super.move();
 	}
-
 }

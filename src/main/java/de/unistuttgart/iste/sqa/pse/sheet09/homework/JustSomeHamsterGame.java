@@ -4,11 +4,11 @@ import de.hamstersimulator.objectsfirst.external.simple.game.SimpleHamsterGame;
 
 /**
  * Just some game.
- * 
+ *
  * This game is not required to solve the exercise sheet. It exists merely in
  * case you want to try out some things with instances of {@link LazyHamster} or
  * {@link CheatingHamster}.
- * 
+ *
  */
 public final class JustSomeHamsterGame extends SimpleHamsterGame {
 
@@ -19,7 +19,5 @@ public final class JustSomeHamsterGame extends SimpleHamsterGame {
 	}
 
 	@Override
-	protected void run() {
-
-	}
+	protected void run() {}
 }
