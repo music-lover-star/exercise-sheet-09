@@ -27,3 +27,6 @@ You don't need this repo for the homework part.
   ```sh 
     mvn clean compile exec:java@JustSomeHamsterGameApp
   ```
+  ```sh
+  mvn clean compile exec:java@OlympicsHamsterGameApp
+  ```
