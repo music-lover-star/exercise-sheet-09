@@ -6,6 +6,8 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.polymorphismCollections;
 public class ListTester {
 
 	public static void main(String[] args) {
-		// Implement the tests from exercise 2 here.
+		// Implement exercise 2 (c) and (f) here.
 	}
+	
+	// Add operations for exercise 2 (b), (d) and (e) here.
 }

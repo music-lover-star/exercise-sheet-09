@@ -3,15 +3,13 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.polymorphismCollections;
 import static java.lang.Math.pow;
 
 enum State {
-	READY,
-	RUNNING,
-	STOPPED
+	READY, RUNNING, STOPPED
 }
 
 /**
  * A class implementing a timer or a stop watch.
  *
- * @author Steffen Becker
+ * @author Steffen Becker, Sophie Stieß
  */
 public class Timer {
 
@@ -19,13 +17,12 @@ public class Timer {
 	private long nanosecondsAtStop;
 	private State timerState = State.READY;
 
-	/*@
-	@ requires timerState == State.READY
-	@ ensures timerState == State.RUNNING
-	@ ensures nanosecondsAtStart != null
-	@*/
 	/**
 	 * When the timer is ready, start measuring the time.
+	 * 
+	 * Requires that {@code timerState == State.READY}, ensures that
+	 * {@code timerState == State.RUNNING} and {@code nanosecondsAtStart} is the current time according to the JVM.
+	 * 
 	 */
 	public void start() {
 		if (timerState != State.READY) {
@@ -35,14 +32,13 @@ public class Timer {
 		nanosecondsAtStart = System.nanoTime();
 	}
 
-	/*@
-	@ requires timerState == State.RUNNING
-	@ ensures timerState == State.STOPPED
-	@ ensures nanosecondsAtStart != null && nanosecondsAtStop != null
-	@ ensures nanosecondsAtStart < nanosecondsAtStop
-	@*/
 	/**
 	 * When the timer is running, stop the measurement.
+	 * 
+	 * Requires that {@code timerState == State.RUNNING}, ensures that
+	 * {@code timerState == State.STOPPED} and that {@code nanosecondsAtStop} is the current time according to the JVM.
+	 * Also ensures that {@code nanosecondsAtStart <= nanosecondsAtStop}.
+	 * 
 	 */
 	public void stop() {
 		if (timerState != State.RUNNING) {
@@ -52,13 +48,11 @@ public class Timer {
 		timerState = State.STOPPED;
 	}
 
-	/*@
-	@ requires timerState == State.STOPPED
-	@ ensures timerState == State.READY
-	@ ensures nanosecondsAtStart == 0 && nanosecondsAtStop == 0
-	@*/
 	/**
 	 * Reset a stopped timer.
+	 *
+	 * Requires that {@code timerState == State.STOPPED}, ensures that
+	 * {@code timerState == State.READY} and both {@code nanosecondsAtStart} and {@code nanosecondsAtStop} are zero.
 	 */
 	public void reset() {
 		if (timerState != State.STOPPED) {
@@ -69,10 +63,10 @@ public class Timer {
 		timerState = State.READY;
 	}
 
-	/*@
-	@ requires timerState == State.STOPPED
-	@*/
 	/**
+	 *
+	 * Requires that {@code timerState == State.STOPPED}.
+	 *
 	 * @return the measurement taken in case the timer has been stopped.
 	 */
 	public long getResultInNanoseconds() {
@@ -86,8 +80,7 @@ public class Timer {
 	 * Print the measured time to the console in Microseconds
 	 */
 	public void printResult() {
-		System.out.format(
-				"The timer recorded %dµs (%.4fms)\n",
-				Math.round(getResultInNanoseconds() / pow(10, 3)), getResultInNanoseconds() / pow(10, 6));
+		System.out.format("The timer recorded %dµs (%.4fms)\n", Math.round(getResultInNanoseconds() / pow(10, 3)),
+				getResultInNanoseconds() / pow(10, 6));
 	}
 }
