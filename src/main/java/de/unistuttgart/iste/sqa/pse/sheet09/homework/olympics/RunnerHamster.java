@@ -16,8 +16,8 @@ import de.hamstersimulator.objectsfirst.external.model.Territory;
  *
  */
 public final class RunnerHamster extends Hamster {
-	
-	/* Class Invariants: 
+
+	/* Class Invariants:
 	 * The tactics must never be null.
 	 * {@code energyRemaining} and {@code actionsTaken} must never be negative.
 	 */
@@ -29,11 +29,11 @@ public final class RunnerHamster extends Hamster {
 
 	/**
 	 * Create a new instance of {@link RunnerHamster}.
-	 * 
+	 *
 	 * The newly created hamster has 20 energy points, not yet taken any actions,
 	 * and instance of {@link FeedNeverStrategy} and {@link RunSlowlyRacePlan} as
 	 * initial tactics.
-	 * 
+	 *
 	 * @param territory territory to create the new hamster in. Must not be null.
 	 * @param location  location to create the new hamster at. Must not be null.
 	 * @param direction direction for the new hamster to look towards. Must not be
@@ -62,9 +62,9 @@ public final class RunnerHamster extends Hamster {
 		if (energyRemaining < 3) throw new IllegalStateException("There are not enough energy points left to do this.");
 		energyRemaining -= 3;
 		/*
-		* loop_invariant moves forward i times
-		* @decreasing 3 - i
-		*/
+		 * loop_invariant moves forward i times
+		 * decreasing 3 - i
+		 */
 		for (int i = 0; i < 3; i++) {
 			moveForward();
 		}
@@ -86,9 +86,9 @@ public final class RunnerHamster extends Hamster {
 		}
 		energyRemaining -= 1;
 		/*
-		* loop_invariant moves forward i times
-		* @decreasing 2 - i
-		*/
+		 * loop_invariant moves forward i times
+		 * decreasing 2 - i
+		 */
 		for (int i = 0; i < 2; i++) {
 			moveForward();
 		}
@@ -123,7 +123,7 @@ public final class RunnerHamster extends Hamster {
 
 	/**
 	 * Returns the amount of energy points this hamster has left at the moment.
-	 * 
+	 *
 	 * @return amount of remaining energy points.
 	 */
 	public int getEnergyRemaining() {
@@ -133,7 +133,7 @@ public final class RunnerHamster extends Hamster {
 	/**
 	 * Returns whether or not this hamster has finished the race and finds himself
 	 * in the finishers zone.
-	 * 
+	 *
 	 * @return true, if this hamster is at the goal, false otherwise.
 	 */
 	public boolean hasFinished() {
@@ -144,7 +144,7 @@ public final class RunnerHamster extends Hamster {
 
 	/**
 	 * Returns whether or not this hamster is situated on a feeding zone.
-	 * 
+	 *
 	 * @return true, if this hamster is at a feed zone, false otherwise.
 	 */
 	public boolean isAtFeedZone() {
@@ -193,9 +193,9 @@ public final class RunnerHamster extends Hamster {
 	 * @param tactics the new RacePlan. Must not be null.
 	 */
 	public void setRacePlan(final RacePlan tactics) {
-        if (tactics == null) {
-        	throw new IllegalArgumentException("New tactic is null, but must not be.");
-        }
+		if (tactics == null) {
+			throw new IllegalArgumentException("New tactic is null, but must not be.");
+		}
 		this.runningTactic = tactics;
 	}
 
@@ -206,15 +206,15 @@ public final class RunnerHamster extends Hamster {
 	 */
 	public void setFeedingTactics(final FeedingStrategy tactics) {
 		if (tactics == null) {
-        	throw new IllegalArgumentException("New tactic is null, but must not be.");
-        }
+			throw new IllegalArgumentException("New tactic is null, but must not be.");
+		}
 		this.feedingTactic = tactics;
 	}
 
 	/**
 	 * Returns the amount of times {@code executeNextAction()} has been called on
 	 * this hamster.
-	 * 
+	 *
 	 * @return amount of calls to {@code executeNextAction()}.
 	 */
 	public int getActionsTaken() {
