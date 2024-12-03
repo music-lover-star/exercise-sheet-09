@@ -46,14 +46,15 @@ public final class OlympicsHamsterGame extends SimpleHamsterGame {
 		final RunnerHamster speedy = new RunnerHamster(game.getTerritory(), new Location(1, 1), Direction.EAST);
 
 		// put your code for bonustask (f) between here...
-		while (!speedy.hasFinished()) {
-			speedy.executeNextAction();
-		}
-
+		
+		
+		
 		// ...and here. Do NOT put any code after here.
 
 		if (speedy.hasFinished()) {
 			speedy.write("I needed " + speedy.getActionsTaken() + " actions!");
+		} else {
+			speedy.write("Oops, i did not even reach the goal.");
 		}
 	}
 
