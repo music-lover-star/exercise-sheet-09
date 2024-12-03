@@ -1,14 +1,9 @@
 # About
-This repository contains the classes needed for solving PSE WS 22/23 excercise sheet 9.
+This repository contains the classes needed for solving PSE WS 24/25 excercise sheet 9.
 
 The sheet has a presence and a homework part.
 
-In the presence part you will work with collections, use overloading and overriding and write recursive operations.
-In the homework part you will learn the concepts of object-oriented programming.
-
 The code should be solved in the specific classes.
-In the presence part you have to use the classes in this project and in the homework part you have to create your own maven project.
-You don't need this repo for the homework part.
 
 # Run the project
 * Open and run in Eclipse
@@ -23,9 +18,6 @@ You don't need this repo for the homework part.
   ```
   ```sh 
     mvn clean compile exec:java@ListTester
-  ```
-  ```sh 
-    mvn clean compile exec:java@JustSomeHamsterGameApp
   ```
   ```sh
   mvn clean compile exec:java@OlympicsHamsterGameApp
