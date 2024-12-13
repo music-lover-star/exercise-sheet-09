@@ -6,36 +6,44 @@ package de.unistuttgart.iste.sqa.pse.sheet09.presence.overrideOverload;
 public class OverloadedUsageApp {
 
 	public static void main(final String[] args) {
-		// Create an object libraryOfAlexandria of type Library and an object stuttgartOperaHouse of type Opera
 		Library libraryOfAlexandria = new Library("libraryOfAlexandria");
 		Opera stuttgartOperaHouse = new Opera("stuttgartOperaHouse");
 
-		// Call this class' static print building info and pass libraryOfAlexandria and
-		// stuttgartOperaHouse
-		printBuildingInfo(libraryOfAlexandria);
-		printBuildingInfo(stuttgartOperaHouse);
+		OverloadedUsageApp.printBuildingInfo(libraryOfAlexandria);
+		OverloadedUsageApp.printBuildingInfo(stuttgartOperaHouse);
 
-		// Create entities building1 and building2 of type Building
-		// let them reference libraryOfAlexandria and stuttgartOperaHouse
 		Building building1 = libraryOfAlexandria;
 		Building building2 = stuttgartOperaHouse;
 
-		// Call this class' static print building info and pass each of the building
-		// entities
-		printBuildingInfo(building1);
-		printBuildingInfo(building2);
+		OverloadedUsageApp.printBuildingInfo(building1);
+		OverloadedUsageApp.printBuildingInfo(building2);
 	}
 
+	/**
+	 * Print information about the given building.
+	 * 
+	 * @param building building to print information about.
+	 */
 	private static void printBuildingInfo(final Building building) {
 		System.out.format("Printing Information for a BUILDING:\n");
 		building.printBuildingInfo();
 	}
 
+	/**
+	 * Print information about the given library.
+	 * 
+	 * @param aLibrary library to print information about.
+	 */
 	private static void printBuildingInfo(final Library aLibrary) {
 		System.out.format("Printing Information for a LIBRARY:\n");
 		aLibrary.printBuildingInfo();
 	}
 
+	/**
+	 * Print information about the given opera.
+	 * 
+	 * @param aOpera opera to print information about.
+	 */
 	private static void printBuildingInfo(final Opera aOpera) {
 		System.out.format("Printing Information for an OPERA:\n");
 		aOpera.printBuildingInfo();
