@@ -21,7 +21,7 @@ public class OverloadedUsageApp {
 
 	/**
 	 * Print information about the given building.
-	 * 
+	 *
 	 * @param building building to print information about.
 	 */
 	private static void printBuildingInfo(final Building building) {
@@ -31,7 +31,7 @@ public class OverloadedUsageApp {
 
 	/**
 	 * Print information about the given library.
-	 * 
+	 *
 	 * @param aLibrary library to print information about.
 	 */
 	private static void printBuildingInfo(final Library aLibrary) {
@@ -41,7 +41,7 @@ public class OverloadedUsageApp {
 
 	/**
 	 * Print information about the given opera.
-	 * 
+	 *
 	 * @param aOpera opera to print information about.
 	 */
 	private static void printBuildingInfo(final Opera aOpera) {

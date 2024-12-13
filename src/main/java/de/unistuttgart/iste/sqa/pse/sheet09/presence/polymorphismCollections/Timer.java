@@ -40,7 +40,7 @@ public class Timer {
 	 * Requires that {@code timerState == State.RUNNING}, ensures that
 	 * {@code timerState == State.STOPPED} and that {@code nanosecondsAtStop} is the current time according to the JVM.
 	 * Also ensures that {@code nanosecondsAtStart <= nanosecondsAtStop}.
-	 * 
+	 *
 	 * Once the timer is stopped, the measurement can be printed with {@link Timer#printResult()}.
 	 */
 	public void stop() {
