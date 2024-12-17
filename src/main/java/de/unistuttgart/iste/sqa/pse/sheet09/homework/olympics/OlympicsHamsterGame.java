@@ -36,7 +36,7 @@ public final class OlympicsHamsterGame extends SimpleHamsterGame {
 	}
 
 	/**
-	 * Speedy runs the course in fewer than 30 turns.
+	 * Speedy runs the course in 30 or less turns.
 	 *
 	 * To achieve this, speedy switches strategies during the race.
 	 *
