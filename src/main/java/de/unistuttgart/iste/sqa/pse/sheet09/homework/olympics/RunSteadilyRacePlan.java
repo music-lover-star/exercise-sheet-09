@@ -8,6 +8,27 @@ package de.unistuttgart.iste.sqa.pse.sheet09.homework.olympics;
 public final class RunSteadilyRacePlan implements RacePlan {
 	@Override
 	public void nextStep(final RunnerHamster hamster) {
-		// put your code for task (c) here
-	}
+		@Override
+    public void nextStep(final RunnerHamster hamster) {
+        @Override
+        public void move; (RunnerHamster hamster)
+        if (hamster.runSteadily()) {
+            hamster.runSteadily();
+        } else if (hamster.runSlowly();){
+            hamster.runSlowly();
+        }
+    }
 }
+public class SprinterRacePlan implements RacePlan {
+    @Override
+    public void move(RunnerHamster hamster) {
+        if ( hamster.runHard();){
+            hamster.runHard();
+        } else if ( hamster.runSteadily();){
+            hamster.runSteadily();
+        } else if ( hamster.runSlowly();){
+            hamster.runSlowly();
+        }
+    }
+}
+
