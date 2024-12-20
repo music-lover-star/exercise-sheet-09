@@ -45,11 +45,18 @@ public final class OlympicsHamsterGame extends SimpleHamsterGame {
 	private void recordAttempt() {
 		final RunnerHamster speedy = new RunnerHamster(game.getTerritory(), new Location(1, 1), Direction.EAST);
 
-		// put your code for bonustask (f) between here...
-		
-		
-		
-		// ...and here. Do NOT put any code after here.
+		for (int i = 0; i < 30; i++) {
+			runner.executeNextAction();
+			if (runner.hasFinished()) {
+				System.out.println("Ziel erreicht in " + (i + 1) + " Aktionen!");
+				break;
+			}
+		}
+
+		if (!runner.hasFinished()) {
+			System.out.println("Ziel nicht innerhalb von 30 Aktionen erreicht.");
+		}
+	}
 
 		if (speedy.hasFinished()) {
 			speedy.write("I needed " + speedy.getActionsTaken() + " actions!");
