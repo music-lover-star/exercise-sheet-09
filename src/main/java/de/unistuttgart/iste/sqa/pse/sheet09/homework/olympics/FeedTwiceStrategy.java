@@ -6,11 +6,21 @@ package de.unistuttgart.iste.sqa.pse.sheet09.homework.olympics;
  * @author your name
  */
 public final class FeedTwiceStrategy implements FeedingStrategy {
-	// if required, put attributes for task (d) here
+	public class FeedTwiceStrategy implements FeedingStrategy {
+    private int feedCount = 0;
 
 	@Override
 	public boolean isFeedingRequired() {
-		// put code for task (d) here
-		return false;
-	}
+		@Override
+    public boolean shouldFeed(RunnerHamster hamster) {
+        if (hamster.isOnFeedingStation() && feedCount < 2) {
+            feedCount++;
+            return true;
+        }
+        if (!hamster.isOnFeedingStation()) {
+            feedCount = 0;
+        }
+        return false;
+    }
 }
+	
